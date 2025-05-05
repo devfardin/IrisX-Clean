@@ -1,0 +1,7 @@
+/* Home page image sarousel style */
+
+.elementor-9 .elementor-element.elementor-element-76fcbe7 .elementor-swiper-button.elementor-swiper-button-prev svg, .elementor-9 .elementor-element.elementor-element-76fcbe7 .elementor-swiper-button.elementor-swiper-button-next svg {
+    background: #C8A2C8 !important;
+    border-radius: 50px;
+    padding: 10px;
+}
