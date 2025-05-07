@@ -62,3 +62,29 @@
     top: 0;
     left: 0;
 }
+
+/* Privacy and policy */
+.table_of_contents li.elementor-icon-list-item a:hover {
+    text-decoration: underline;
+    transition: all 0.4s;
+}
+
+
+/* Contact Form */
+
+.request_quote .elementor-icon-box-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.request_quote .elementor-icon-box-description a {
+    font-weight: 400;
+    transition: all 0.4s;
+    color: var( --e-global-color-primary );
+}
+
+.request_quote .elementor-icon-box-description a:hover {
+    color: #4F46E5;
+    text-decoration: underline;
+    cursor: pointer;
+}
