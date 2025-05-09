@@ -1,25 +1,25 @@
 <?php
-function rander_iris_blog_posts()
+function rander_iris_author_posts()
 {
     ob_start();
     wp_enqueue_style("iris_blog_posts");
 
-    $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-    $args = array(
+    $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+    $query = new WP_Query([
         'post_type' => 'post',
         'post_status' => 'publish',
         'paged' => $paged,
-    );
-    $query = new \WP_Query($args);
+    ]);
+
     ?>
     <section class="iris_post_container">
         <div class="iris_post_wrapper">
-            <?php if ($query->have_posts()): ?>
+            <?php if (have_posts()): ?>
                 <div class="irish_post__row">
-                    <?php while ($query->have_posts()):
-                        $query->the_post(); ?>
-                        <article class="irish_post__inner_container">
+                    <?php while (have_posts()):
+                        the_post(); ?>
 
+                        <article class="irish_post__inner_container">
                             <!-- Post Feature image -->
                             <div class="iris_post__feature">
                                 <a href="<?php echo get_the_permalink(); ?>" rel="bookmark"
@@ -41,9 +41,9 @@ function rander_iris_blog_posts()
                             <!-- Post Info -->
                             <div class="blog_post_info_container">
                                 <!-- post title -->
-                                <h1 class="blog_post_title">
+                                <a href="<?php echo get_the_permalink(); ?>" class="blog_post_title">
                                     <?php echo substr(get_the_title(), 0, 60) . '...'; ?>
-                                </h1>
+                                </a>
                                 <!-- post content -->
                                 <p class="blog_post_content"> <?php
                                 echo substr(get_the_content(), 0, 130) . '...'; ?>
@@ -77,17 +77,18 @@ function rander_iris_blog_posts()
                         </article>
                     <?php endwhile; ?>         <?php wp_reset_postdata(); ?>
                 </div>
+
                 <div class="blog_post_navigation" role="navigation">
                     <?php
-                    $big = 999999999; // need an unlikely integer
-                    $translated = __('', 'extracatchy'); // Supply translatable string
+                    global $wp_query;
+
                     echo paginate_links(array(
-                        'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
-                        'format' => '?paged=%#%',
+                        'total' => $wp_query->max_num_pages,
                         'current' => max(1, get_query_var('paged')),
-                        'total' => $query->max_num_pages,
-                        'before_page_number' => '<span class="screen-reader-text">' . $translated . ' </span>'
-                    )); ?>
+                        'prev_text' => __('« Prev'),
+                        'next_text' => __('Next »'),
+                    ));
+                    ?>
                 </div>
 
             <?php else: ?>
@@ -100,4 +101,4 @@ function rander_iris_blog_posts()
     <?php
     return ob_get_clean();
 }
-add_shortcode('iris_rander_posts', 'rander_iris_blog_posts');
+add_shortcode('iris_rander_author_posts', 'rander_iris_author_posts');

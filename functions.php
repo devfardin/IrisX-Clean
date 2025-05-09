@@ -4,6 +4,9 @@ define( 'IRIS_THEME_URL', get_stylesheet_directory_uri() );
 
 // Theme shortcode
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/blog-posts.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/categories-posts.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/author-post.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/search-posts.php');
 
 
 /** 

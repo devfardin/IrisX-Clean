@@ -150,3 +150,17 @@
     line-height: 1.3em;
     color: black;
 }
+
+/* -------------------------------- animations -------------------------------- */
+.MoveUpDown{animation: MoveUpDown 2s linear infinite }
+@keyframes MoveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
