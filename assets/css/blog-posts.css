@@ -1,0 +1,103 @@
+.iris_post_wrapper .irish_post__row {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 24px;
+    align-items: top;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .iris_post_wrapper .irish_post__row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .iris_post_wrapper .irish_post__row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+}
+
+.irish_post__row .irish_post__inner_container {
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background: rgb(255 255 255);
+    border: 1px solid rgb(255 255 255);
+    border-radius: 15px;
+}
+
+.irish_post__row .iris_post__feature {
+    position: relative;
+}
+.iris_post__feature .wp-post-image{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.iris_post__feature .blog_post_category {
+    padding: 3px 12px;
+    background: white;
+    border-radius: 100px;
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    transition: 0.5s;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--e-global-color-primary);
+}
+
+/* Post info container */
+.irish_post__inner_container .blog_post_info_container {
+    padding: 20px;
+}
+.blog_post_info_container .blog_post_title{
+    font-size: 20px;
+    line-height: 1.4em;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: var( --e-global-color-text );
+}
+.blog_post_info_container .blog_post_content {
+    color: var(--e-global-color-text);
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.blog_post_info_container .blog_post_author_wrapper{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.blog_post_author_wrapper .blog_post__author_avatar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.blog_post_author_wrapper .auther_display_name {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    color: rgb(48 49 52);
+}
+.post_author_date_wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post_author_date_wrapper .blog_post_date span{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat';
+    color: rgb(48 49 52);
+}
