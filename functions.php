@@ -7,6 +7,8 @@ require_once( IRIS_THEME_DIR . '/includes/shortcodes/blog-posts.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/categories-posts.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/author-post.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/search-posts.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-title.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-details.php');
 
 
 /** 
