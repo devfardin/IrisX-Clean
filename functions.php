@@ -9,6 +9,7 @@ require_once( IRIS_THEME_DIR . '/includes/shortcodes/author-post.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/search-posts.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-title.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-details.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-categories.php');
 
 
 /** 
@@ -34,6 +35,12 @@ function irisx_theme_enqueue_frontend_scripts() {
 		IRIS_THEME_URL . '/assets/css/single-posts.css',
 		array(),
 		filemtime( IRIS_THEME_DIR . '/assets/css/single-posts.css' ),
+	);
+	wp_register_style(
+		'iris_single_post_categories',
+		IRIS_THEME_URL . '/assets/css/single-post-categories.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/single-post-categories.css' ),
 	);
 
 }

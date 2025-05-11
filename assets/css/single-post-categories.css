@@ -1,0 +1,30 @@
+.cf_single_post_categories {
+    margin: 0px;
+    padding: 0px;
+}
+
+.cf_single_post_categories li a {
+    color: var(--Black, #010101);
+    font-family: Gilroy;
+    font-size: 22px;
+    font-weight: 500;
+    border-top: 1px solid rgba(0, 0, 0, 0.20);
+    display: block;
+    padding: 15px 20px;
+    transition: all .3s;
+    opacity: 0.8;
+}
+
+.cf_single_post_categories li .single_post_category_active {
+    background: rgba(0, 0, 0, 0.10);
+    color: #010711;
+}
+
+.cf_single_post_categories li .single_post_category:hover {
+    background: rgba(0, 0, 0, 0.10);
+    color: #010711;
+}
+
+.cf_single_post_categories {
+    list-style: none;
+}
