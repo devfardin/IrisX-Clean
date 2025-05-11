@@ -72,6 +72,9 @@
     font-weight: 400;
     margin: 10px 0;
 }
+.blog_post_info_container .blog_post_content_wrapper p {
+    margin: 0;
+}
 .blog_post_info_container .blog_post_read_more_btn{
     display: flex;
     gap: 10px;

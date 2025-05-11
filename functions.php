@@ -29,5 +29,12 @@ function irisx_theme_enqueue_frontend_scripts() {
 		filemtime( IRIS_THEME_DIR . '/assets/css/blog-posts.css' ),
 	);
 
+	wp_register_style(
+		'iris_single_post_style',
+		IRIS_THEME_URL . '/assets/css/single-posts.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/single-posts.css' ),
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'irisx_theme_enqueue_frontend_scripts' );

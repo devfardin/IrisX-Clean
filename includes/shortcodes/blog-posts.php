@@ -45,9 +45,11 @@ function rander_iris_blog_posts()
                                     <?php echo substr(get_the_title(), 0, 60) . '...'; ?>
                                 </h1>
                                 <!-- post content -->
-                                <p class="blog_post_content"> <?php
-                                echo substr(get_the_content(), 0, 130) . '...'; ?>
-                                </p>
+                                <div class="blog_post_content_wrapper">
+                                    <p class="blog_post_content"> <?php
+                                    echo substr(get_the_content(), 0, 130) . '...'; ?>
+                                    </p>
+                                </div>
                                 <div class="blog_post_read_more_btn">
                                     <a href="<?php echo get_the_permalink(); ?>">Read More</a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
