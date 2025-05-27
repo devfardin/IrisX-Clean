@@ -34,10 +34,10 @@ function iris_cleaning_customer_reviews()
                             <!-- client comments END -->
                             <!-- Clint info START -->
                             <div class="reviews_author">
-                                <div>
+                                <div class="author_feature">
                                     <?php the_post_thumbnail('widget-thumbnail'); ?>
                                 </div>
-                                <div>
+                                <div class="author_name">
                                     <?php echo get_post_meta(get_the_ID(), 'client_name', true); ?>
                                 </div>
                             </div>

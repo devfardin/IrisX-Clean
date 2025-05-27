@@ -1,7 +1,7 @@
 .iris_cleaning_revews_wrapper .iris_cleaning_revews__row {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 24px;
+    gap: 30px;
     align-items: top;
     justify-content: space-between;
 }
@@ -9,25 +9,79 @@
 @media only screen and (min-width: 768px) {
     .iris_cleaning_revews_wrapper .iris_cleaning_revews__row {
         grid-template-columns: repeat(2, 1fr);
-        gap: 24px;
+        gap: 30px;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .iris_cleaning_revews_wrapper .iris_cleaning_revews__row {
         grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
+        gap: 30px;
     }
 }
 
-.irish_post__row .irish_post__inner_container {
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.iris_cleaning_revews__row .iris_cleaning_innter_container {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     background: rgb(255 255 255);
-    border: 1px solid rgb(255 255 255);
+    border: 1px solid #e5e7eb;
     border-radius: 15px;
+    padding: 15px 18px;
 }
 
+/* reviws innter container */
+.iris_cleaning_innter_container .client_rating {
+    font-size: 29px;
+}
+.iris_cleaning_innter_container .client_rating .fill {
+    color: #FBBC04;
+}
+.iris_cleaning_innter_container .client_rating .out {
+    color: #919191;
+}
+
+/* reviews style */
+.iris_cleaning_innter_container .client_comment p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--e-global-color-kadence3);
+}
+
+@media only screen and (min-width: 768px) {
+.iris_cleaning_innter_container .client_comment p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6em;
+    color: var(--e-global-color-kadence3);
+}
+}
+
+
+.iris_cleaning_innter_container .reviews_author{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+.iris_cleaning_innter_container .reviews_author .author_feature img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.iris_cleaning_innter_container .reviews_author .author_name {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--e-global-color-kadence4);
+}
+@media only screen and (min-width: 768px) {
+.iris_cleaning_innter_container .reviews_author .author_name {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--e-global-color-kadence4);
+}
+}
 
 /* Reviews post navigation */
 .blog_post_navigation {
