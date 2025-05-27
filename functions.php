@@ -13,6 +13,7 @@ require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-categories.php'
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/view-counter.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/reviews.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/latest-reviews.php');
 
 
 /** 

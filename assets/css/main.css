@@ -160,3 +160,24 @@ input.choices__input.choices__input--cloned {
         transform: translateY(10px);
     }
 }
+.required-notice{
+    display: none;
+}
+
+.wpmtst_submit_testimonial {
+    background-color: var(--e-global-color-primary) !important;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2em;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--e-global-color-primary);
+    border-radius: 6px;
+    padding: 14px 25px !important;
+    transition: 0.4s;
+}
+.wpmtst_submit_testimonial:hover{
+    background: #F0E6F7 !important;
+    color: var(--e-global-color-primary) !important;
+    border-color: #F0E6F7;
+}
