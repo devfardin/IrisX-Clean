@@ -10,6 +10,9 @@ require_once( IRIS_THEME_DIR . '/includes/shortcodes/search-posts.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-title.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-details.php');
 require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-post-categories.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/single-popular-blog-posts.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/view-counter.php');
+require_once( IRIS_THEME_DIR . '/includes/shortcodes/reviews.php');
 
 
 /** 
@@ -41,6 +44,18 @@ function irisx_theme_enqueue_frontend_scripts() {
 		IRIS_THEME_URL . '/assets/css/single-post-categories.css',
 		array(),
 		filemtime( IRIS_THEME_DIR . '/assets/css/single-post-categories.css' ),
+	);
+	wp_register_style(
+		'iris_single_popular_blog_post',
+		IRIS_THEME_URL . '/assets/css/single-popular-blog-posts.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/single-popular-blog-posts.css' ),
+	);
+	wp_register_style(
+		'iris_cleaning_services_reviews',
+		IRIS_THEME_URL . '/assets/css/reviews.css',
+		array(),
+		filemtime( IRIS_THEME_DIR . '/assets/css/reviews.css' ),
 	);
 
 }

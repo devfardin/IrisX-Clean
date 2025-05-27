@@ -5,11 +5,10 @@ function rander_iris_single_post_title()
     <?php if (is_single()): ?>
         <style>
             .iris_single_post_title {
-                font-family: "Montserrat", Sans-serif;
                 font-size: 30px;
                 font-weight: 700;
                 line-height: 1.2em;
-                color: var(--e-global-color-kadence3);
+                color: #ffffff;
                 text-align: center;
                 margin-bottom: -15px;
             }

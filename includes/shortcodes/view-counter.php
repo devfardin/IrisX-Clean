@@ -1,5 +1,5 @@
 <?php
-function axiusweb_view_counter(){
+function iris_view_counter(){
     ob_start(); ?>
 
     <?php
@@ -18,4 +18,4 @@ function axiusweb_view_counter(){
     <?php
      return ob_get_clean();
 }
-add_shortcode( 'view_counter', 'axiusweb_view_counter' );
+add_shortcode( 'view_counter', 'iris_view_counter' );

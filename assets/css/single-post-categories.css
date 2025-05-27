@@ -5,8 +5,7 @@
 
 .cf_single_post_categories li a {
     color: var(--Black, #010101);
-    font-family: Gilroy;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
     border-top: 1px solid rgba(0, 0, 0, 0.20);
     display: block;
@@ -16,12 +15,12 @@
 }
 
 .cf_single_post_categories li .single_post_category_active {
-    background: rgba(0, 0, 0, 0.10);
+    background: var(--e-global-color-secondary);
     color: #010711;
 }
 
 .cf_single_post_categories li .single_post_category:hover {
-    background: rgba(0, 0, 0, 0.10);
+    background: var(--e-global-color-secondary);
     color: #010711;
 }
 

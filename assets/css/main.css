@@ -27,27 +27,22 @@
 **/
 
 .rank-math-breadcrumb p {
-    color: #010101 !important;
-    opacity: 0.7;
+    color: #ffffff !important;
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    font-family: "Montserrat", Sans-serif;
     position: relative;
 }
 .rank-math-breadcrumb p a {
-    color: #010101 !important;
-    opacity: 0.9;
+    color: #ffffff !important;
     font-size: 18px;
     text-align: center;
     font-weight: 400;
-    font-family: "Montserrat", Sans-serif;
     position: relative;
 }
 .rank-math-breadcrumb  a:first-child::before{
     content: url('../images/icon-home.png');
     position: absolute;
-    opacity: 0.7;
     top: 0px;
     left: -34px;
 }
@@ -58,7 +53,6 @@
 .rank-math-breadcrumb .separator:before {
     content: url('../images/arrow-right.png');
     position: absolute;
-    opacity: 0.7;
     top: 0;
     left: 0;
 }
@@ -93,7 +87,6 @@
 .fluentform label {
     font-size: 18px !important;
     font-weight: 400 !important;
-    font-family: Montserrat !important;
     color:#2D3748 !important;
 }
 .fluentform input, select {
@@ -122,7 +115,6 @@
 
 .ff-default .ff_btn_style {
     background-color: var(--e-global-color-primary) !important;
-    font-family: "Montserrat", Sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2em;
@@ -145,12 +137,16 @@
     padding: 15px;
     border-radius: 5px;
     font-size: 18px;
-    font-family: 'Montserrat';
     font-weight: 400;
     line-height: 1.3em;
     color: black;
 }
 
+input.choices__input.choices__input--cloned {
+    width: 100% !important;
+    min-width: 100% !important;
+    border: none !important;
+}
 /* -------------------------------- animations -------------------------------- */
 .MoveUpDown{animation: MoveUpDown 2s linear infinite }
 @keyframes MoveUpDown {
