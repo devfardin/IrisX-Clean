@@ -35,7 +35,18 @@ function iris_cleaning_customer_reviews()
                             <!-- Clint info START -->
                             <div class="reviews_author">
                                 <div class="author_feature">
-                                    <?php the_post_thumbnail('widget-thumbnail'); ?>
+                                    <?php if (empty(get_the_post_thumbnail_url())) {
+                                        ?>
+                                        <div class="author_feature_empty">
+                                            <h3>
+                                                <?php echo substr(get_post_meta(get_the_ID(), 'client_name', true), 0, 1); ?>
+                                            </h3>
+                                        </div>
+                                        <?php
+                                    } else {
+                                        the_post_thumbnail('widget-thumbnail');
+
+                                    } ?>
                                 </div>
                                 <div class="author_name">
                                     <?php echo get_post_meta(get_the_ID(), 'client_name', true); ?>
